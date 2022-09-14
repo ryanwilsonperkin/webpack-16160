@@ -9,9 +9,6 @@ module.exports = {
       {
         test: /\.svg$/,
         type: "asset/resource",
-        generator: {
-          emit: true,
-        },
         use: {
           loader: ImageMinimizerPlugin.loader,
           options: {
